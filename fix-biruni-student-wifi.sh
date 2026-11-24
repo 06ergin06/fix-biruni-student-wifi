@@ -105,6 +105,6 @@ if command -v dnf >/dev/null 2>&1; then
         exit 1
     fi
 else
-    echo "[-] Sistemde dnf bulunmadığı için update-crypto-policies atlandı ve bağlantı kurulamadı."
+    echo "[-] Bağlantı kurulamadı"
     exit 1
 fi

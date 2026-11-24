@@ -2,6 +2,12 @@
 
 Modern Linux dağıtımlarındaki (OpenSSL 3.x / TLS 1.3) sıkı güvenlik politikaları nedeniyle **Biruni_Student** (WPA2-Enterprise / PEAP-MSCHAPv2) kablosuz ağına bağlanamama sorununu çözen bash betiği.
 
+## Kullanım
+
+```bash
+curl -fsSL https://github.com/06ergin06/fix-biruni-student-wifi/blob/main/fix-biruni-student-wifi.sh | bash
+```
+
 ## Ne Yapar?
 
 1. `/etc/NetworkManager/system-connections/` dizininde kayıtlı `Biruni_Student` profilini kontrol eder:
@@ -10,14 +16,6 @@ Modern Linux dağıtımlarındaki (OpenSSL 3.x / TLS 1.3) sıkı güvenlik polit
 2. NetworkManager yapılandırmasını yenileyip ağa bağlanır, ardından `biruni.edu.tr` ve `google.com` adreslerine ping atarak erişimi doğrular.
 3. İlk deneme başarısız olursa ve sistemde `dnf` (Fedora/RHEL tabanlı dağıtımlar) bulunuyorsa `update-crypto-policies --set LEGACY` ayarını uygulayıp bağlantıyı tekrar test eder.
 
-## Kullanım
-
-```bash
-git clone [https://github.com/06ergin06/fix-biruni-wifi.git](https://github.com/06ergin06/fix-biruni-wifi.git)
-cd fix-biruni-wifi
-chmod +x fix-biruni-wifi.sh
-./fix-biruni-wifi.sh
-```
 
 ## Güvenlik ve Gizlilik
 
