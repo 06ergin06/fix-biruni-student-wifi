@@ -5,7 +5,7 @@ Modern Linux dağıtımlarındaki (OpenSSL 3.x / TLS 1.3) sıkı güvenlik polit
 ## Kullanım
 
 ```bash
-curl -fsSL https://github.com/06ergin06/fix-biruni-student-wifi/blob/main/fix-biruni-student-wifi.sh | bash
+curl -fsSL https://raw.githubusercontent.com/06ergin06/fix-biruni-student-wifi/refs/heads/main/fix-biruni-student-wifi.sh | bash
 ```
 
 ## Ne Yapar?
